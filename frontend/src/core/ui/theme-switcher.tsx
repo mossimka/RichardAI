@@ -14,8 +14,21 @@ export default function ThemeSwitcher() {
   }, []);
 
   return (
-    <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-      {mounted ? theme === "dark" ? <SunIcon /> : <MoonIcon /> : <Loader />}
+    <Button
+      style={{ padding: "0.6rem", borderRadius: "10px" }}
+      variant="outline"
+      size="sm"
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+    >
+      {mounted ? (
+        theme === "dark" ? (
+          <SunIcon size={20} />
+        ) : (
+          <MoonIcon size={20} />
+        )
+      ) : (
+        <Loader size={20} />
+      )}
     </Button>
   );
 }

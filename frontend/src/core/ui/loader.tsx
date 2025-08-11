@@ -1,6 +1,6 @@
-import { LoaderCircleIcon } from "lucide-react";
+import { Loader2Icon } from "lucide-react";
 import React from "react";
 
 export default function Loader({ size }: { size?: number }) {
-  return <LoaderCircleIcon size={size} className="animate-spin" />;
+  return <Loader2Icon size={size} className="animate-spin" />;
 }

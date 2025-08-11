@@ -1,11 +1,16 @@
 .base {
   border-radius: 6px;
   font-weight: 500;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
   cursor: pointer;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Основная кнопка */
 .primary {
   background-color: var(--color-primary);
   color: var(--color-text-invert);
@@ -15,6 +20,7 @@
   background-color: var(--color-primary-hover);
 }
 
+/* Акцентная кнопка */
 .secondary {
   background-color: var(--color-accent);
   color: var(--color-text-invert);
@@ -24,15 +30,19 @@
   background-color: var(--color-accent-hover);
 }
 
+/* Кнопка с обводкой */
 .outline {
+  background-color: transparent;
   border: 1px solid var(--color-border);
   color: var(--color-text-primary);
 }
 
 .outline:hover {
   border-color: var(--color-border-focus);
+  color: var(--color-border-focus); /* чтобы подсветка выглядела логично */
 }
 
+/* Размеры */
 .sm {
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;

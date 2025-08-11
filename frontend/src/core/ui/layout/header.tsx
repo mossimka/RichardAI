@@ -1,13 +1,15 @@
 import React from "react";
-import { SunIcon, MoonIcon } from "lucide-react";
-import { Button } from "../button";
 import ThemeSwitcher from "../theme-switcher";
+import Logo from "../logo";
 
 const Header = () => {
   return (
     <header>
-      <nav>
+      <nav className="glass">
         <ul>
+          <li>
+            <Logo />
+          </li>
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
