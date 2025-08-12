@@ -1,5 +1,5 @@
 .base {
-  border-radius: 6px;
+  border-radius: 1rem;
   font-weight: 500;
   transition: background-color 0.2s ease, border-color 0.2s ease,
     color 0.2s ease;

@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Loader from "./loader";
+import Link from "next/link";
 
 export default function Logo() {
   const { theme } = useTheme();
@@ -17,11 +18,15 @@ export default function Logo() {
   }
 
   return (
-    <Image
-      width={40}
-      height={40}
-      src={theme === "dark" ? "/vids/logo-dark.webp" : "/vids/logo-light.webp"}
-      alt="Logo"
-    />
+    <Link href="/">
+      <Image
+        width={40}
+        height={40}
+        src={
+          theme === "dark" ? "/vids/logo-dark.webp" : "/vids/logo-light.webp"
+        }
+        alt="Logo"
+      />
+    </Link>
   );
 }

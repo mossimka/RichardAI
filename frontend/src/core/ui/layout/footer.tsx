@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -5,9 +6,15 @@ const Footer = () => {
     <footer>
       <nav>
         <ul>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-          <li>Contact Us</li>
+          <li>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link href="/terms-of-service">Terms of Service</Link>
+          </li>
+          <li>
+            <Link href="/contact-us">Contact Us</Link>
+          </li>
         </ul>
       </nav>
     </footer>

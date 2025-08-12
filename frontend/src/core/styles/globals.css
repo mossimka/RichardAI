@@ -40,6 +40,11 @@ footer {
   padding: 1rem 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 section {
   height: 80vh;
   display: flex;
@@ -50,6 +55,10 @@ section {
 nav {
   width: 75vw;
   padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
   ul {
     display: flex;
     align-items: center;
@@ -58,11 +67,38 @@ nav {
   }
 }
 
+.mobile {
+  display: none;
+  position: relative;
+  overflow: visible;
+}
+
+.burger-menu {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  background-color: var(--color-bg-secondary);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}
+
+/* utility classes */
+
 .glass {
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-backdrop-blur));
   border: 1px solid var(--color-border);
-  border-radius: 12px;
+  border-radius: 1rem;
 }
 
 /* animations */
