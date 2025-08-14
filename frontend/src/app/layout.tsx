@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Atkinson_Hyperlegible } from "next/font/google";
 import "../core/styles/globals.css";
 import Header from "@/core/ui/layout/header";
 import Footer from "@/core/ui/layout/footer";
 import Providers from "@/core/ui/providers";
-
-const atkinson = Atkinson_Hyperlegible({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Richard AI",
@@ -22,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${atkinson.className}`}>
+      <body>
         <Providers>
           <Header />
           <main>{children}</main>

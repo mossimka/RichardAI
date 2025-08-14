@@ -1,8 +1,7 @@
 .base {
   border-radius: 1rem;
   font-weight: 500;
-  transition: background-color 0.2s ease, border-color 0.2s ease,
-    color 0.2s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   border: none;
   display: flex;
@@ -14,10 +13,12 @@
 .primary {
   background-color: var(--color-primary);
   color: var(--color-text-invert);
+  box-shadow: var(--shadow);
 }
 
 .primary:hover {
   background-color: var(--color-primary-hover);
+  box-shadow: var(--hover-shadow);
 }
 
 /* Акцентная кнопка */
