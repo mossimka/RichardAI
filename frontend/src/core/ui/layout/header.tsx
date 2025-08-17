@@ -1,8 +1,8 @@
 import React from "react";
 import ThemeSwitcher from "../theme-switcher";
-import Logo from "../logo";
+import Logo from "../logo/logo";
 import Link from "next/link";
-import BurgerMenu from "../burger-menu";
+import BurgerMenu from "../burger-menu/burger-menu";
 import { LogInIcon } from "lucide-react";
 
 const Header = () => {

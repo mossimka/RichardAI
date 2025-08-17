@@ -1,9 +1,40 @@
 @import "./variables.css";
 
+@font-face {
+  font-family: 'Atkinson';
+  src: url('/fonts/atkinson/AtkinsonHyperlegible-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Atkinson';
+  src: url('/fonts/atkinson/AtkinsonHyperlegible-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Atkinson';
+  src: url('/fonts/atkinson/AtkinsonHyperlegible-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Atkinson';
+  src: url('/fonts/atkinson/AtkinsonHyperlegible-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Atkinson', sans-serif;
+  scrollbar-color: var(--color-accent-hover) var(--color-bg-primary);
 }
 
 html {
@@ -17,6 +48,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   color: var(--color-text-primary);
+}
+
+::selection {
+  background-color: var(--color-accent-hover);
+  color: var(--color-text-invert  );
 }
 
 header {
@@ -72,15 +108,6 @@ nav {
   display: none;
   position: relative;
   overflow: visible;
-}
-
-.burger-menu {
-  flex-direction: column;
-  gap: 2rem;
-  align-items: flex-start;
-  background-color: var(--color-bg-secondary);
-  padding: 1rem;
-  border-radius: 1rem;
 }
 
 @media (max-width: 768px) {

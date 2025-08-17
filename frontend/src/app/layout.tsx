@@ -16,6 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <title>Richard AI</title>
+        <link rel="icon" href="/logo.ico" />
+      </head>
       <body>
         <Providers>
           <Header />
