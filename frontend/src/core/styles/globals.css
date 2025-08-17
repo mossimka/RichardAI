@@ -47,6 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Atkinson', sans-serif;
   color: var(--color-text-primary);
 }
 
@@ -82,6 +83,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  text-shadow: var(--hover-shadow);
+}
+
 section {
   height: 80vh;
   display: flex;
@@ -102,6 +107,15 @@ nav {
     justify-content: space-between;
     list-style: none;
   }
+}
+
+button,
+input,
+select,
+textarea,
+a {
+  font-family: 'Atkinson', sans-serif;
+  font-weight: 600;
 }
 
 .mobile {

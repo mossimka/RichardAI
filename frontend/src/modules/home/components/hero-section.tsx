@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className={Styles.wrapper}>
           <h2>Become a man</h2>
           <h2>you&apos;ve always wanted to be</h2>
-          <Button variant="primary" size="lg">
+          <Button variant="outline" size="lg">
             Start now!
           </Button>
         </div>

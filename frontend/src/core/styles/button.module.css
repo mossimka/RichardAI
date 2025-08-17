@@ -1,15 +1,15 @@
 .base {
   border-radius: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Atkinson', sans-serif;
 }
 
-/* Основная кнопка */
 .primary {
   background-color: var(--color-primary);
   color: var(--color-text-invert);
@@ -17,11 +17,11 @@
 }
 
 .primary:hover {
+  color: var(--color-accent);
   background-color: var(--color-primary-hover);
   box-shadow: var(--hover-shadow);
 }
 
-/* Акцентная кнопка */
 .secondary {
   background-color: var(--color-accent);
   color: var(--color-text-invert);
@@ -31,7 +31,6 @@
   background-color: var(--color-accent-hover);
 }
 
-/* Кнопка с обводкой */
 .outline {
   background-color: transparent;
   border: 1px solid var(--color-border);
@@ -40,10 +39,9 @@
 
 .outline:hover {
   border-color: var(--color-border-focus);
-  color: var(--color-border-focus); /* чтобы подсветка выглядела логично */
+  color: var(--color-border-focus);
 }
 
-/* Размеры */
 .sm {
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;

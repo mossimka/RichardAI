@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../core/styles/globals.css";
-import Header from "@/core/ui/layout/header";
+import Header from "@/core/ui/layout/header/header";
 import Footer from "@/core/ui/layout/footer";
 import Providers from "@/core/ui/providers";
 
