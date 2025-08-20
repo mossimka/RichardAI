@@ -24,12 +24,10 @@ export default function Logo() {
       <Image
         width={40}
         height={40}
-        src={
-          theme === "dark" ? "/vids/logo-dark.webp" : "/vids/logo-light.webp"
-        }
+        src={theme === "dark" ? "/images/logo_dark.webp" : "/images/logo.webp"}
         alt="Logo"
       />
-      <h1>RichardAI</h1>
+      {/* <h1>Richard AI</h1> */}
     </Link>
   );
 }

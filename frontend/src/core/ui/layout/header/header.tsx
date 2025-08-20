@@ -4,41 +4,31 @@ import Logo from "../../logo/logo";
 import Link from "next/link";
 import BurgerMenu from "../../burger-menu/burger-menu";
 import { LogInIcon } from "lucide-react";
-
-import Styles from "./header.module.css";
-import { Button } from "../../button";
+import styles from "./header.module.css";
 
 const Header = () => {
   return (
     <header>
-      <nav className="glass desktop">
-        <ul className={Styles.navList}>
+      <nav className="desktop-header glass">
+        <ul>
           <li>
             <Logo />
           </li>
+
           <li>
-            <ul className={Styles.navAction}>
-              <li>
-                <Button variant="outline">
-                  <Link href="/about">About</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="outline">
-                  <Link href="/contact">Contact</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="outline">
-                  <Link href="/sign-in">
-                    <LogInIcon size="20" />
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <ThemeSwitcher />
-              </li>
-            </ul>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link href="/sign-in">
+              <LogInIcon size="20" />
+            </Link>
+          </li>
+
+          <li>
+            <ThemeSwitcher />
           </li>
         </ul>
       </nav>

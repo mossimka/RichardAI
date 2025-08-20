@@ -1,64 +1,29 @@
 @import "./variables.css";
 
-@font-face {
-  font-family: 'Atkinson';
-  src: url('/fonts/atkinson/AtkinsonHyperlegible-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Atkinson';
-  src: url('/fonts/atkinson/AtkinsonHyperlegible-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Atkinson';
-  src: url('/fonts/atkinson/AtkinsonHyperlegible-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Atkinson';
-  src: url('/fonts/atkinson/AtkinsonHyperlegible-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Atkinson', sans-serif;
-  scrollbar-color: var(--color-accent-hover) var(--color-bg-primary);
+  font-family: inherit;
 }
 
 html {
   scroll-behavior: smooth;
   background-color: var(--color-bg-primary);
-  font-family: 'Atkinson', sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Atkinson', sans-serif;
   color: var(--color-text-primary);
 }
 
-::selection {
-  background-color: var(--color-accent-hover);
-  color: var(--color-text-invert  );
-}
-
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -67,6 +32,7 @@ header {
 }
 
 main {
+  padding-top: 5rem;
   flex: 1;
 }
 
@@ -88,7 +54,7 @@ a:hover {
 }
 
 section {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,28 +75,31 @@ nav {
   }
 }
 
-button,
-input,
-select,
-textarea,
-a {
-  font-family: 'Atkinson', sans-serif;
-  font-weight: 600;
-}
-
-.mobile {
+.mobile-header {
   display: none;
   position: relative;
   overflow: visible;
 }
 
+.burger-menu {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
 @media (max-width: 768px) {
-  .desktop {
+  .desktop-header {
     display: none;
   }
 
-  .mobile {
+  .mobile-header {
     display: flex;
+  }
+
+  nav {
+    width: 90vw;
   }
 }
 

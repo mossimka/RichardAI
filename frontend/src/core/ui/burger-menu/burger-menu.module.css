@@ -1,15 +1,1 @@
-/* burger-menu.module.css */
-.burgerMenu {
-    position: fixed;
-    top: 5rem;
-    right: 5rem;
-    align-items: center;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-    background-color: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    padding: 2rem;
-    border-radius: 1rem;
-    width: 30vw;
-    height: 20vh;
-    z-index: 1000;
-}
+
