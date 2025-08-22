@@ -3,7 +3,13 @@ import "../core/styles/globals.css";
 import Header from "@/core/ui/layout/header/header";
 import Footer from "@/core/ui/layout/footer";
 import Providers from "@/core/ui/providers";
-import { Atkinson_Hyperlegible } from "next/font/google";
+import {
+  Atkinson_Hyperlegible,
+  Archivo,
+  Prompt,
+  Unbounded,
+  DM_Sans,
+} from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Richard AI",
@@ -13,9 +19,16 @@ export const metadata: Metadata = {
   },
 };
 
-const atkinson = Atkinson_Hyperlegible({
+const unbounded = Unbounded({
   weight: ["400", "700"],
-  style: ["normal", "italic"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const dm_sans = DM_Sans({
+  weight: ["400", "700"],
+  style: ["normal"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -27,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${atkinson.className}`}>
+      <body className={`${unbounded.className}`}>
         <Providers>
           <Header />
           <main>{children}</main>

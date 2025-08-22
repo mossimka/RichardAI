@@ -4,13 +4,13 @@
   --color-bg-secondary: #ffffff;
   --color-surface-hover: #f5f5f5;
 
-  --color-primary: #1e3a8a;
-  --color-primary-hover: #1e40af;
-  --color-accent: #d4af37;
-  --color-accent-hover: #b8860b;
+  --color-primary: #d4af37;
+  --color-primary-hover: #b8860b;
+  --color-accent: #065f46;
+  --color-accent-hover: #047857;
 
-  --color-text-primary: #374151;
-  --color-text-secondary: #6b7280;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4b5563;
   --color-text-invert: #ffffff;
 
   --color-border: #d1d5db;
@@ -19,9 +19,9 @@
   --color-success: #10b981;
   --color-success-hover: #059669;
 
-  --shadow: 0 8px 32px rgba(146, 119, 80, 0.25);
-  --hover-shadow: 0 12px 40px rgba(203, 175, 117, 0.35);
-  --active-shadow: 0 4px 16px rgba(203, 175, 117, 0.4);
+  --shadow: 0 8px 32px rgba(212, 175, 55, 0.25);
+  --hover-shadow: 0 12px 40px rgba(212, 175, 55, 0.35);
+  --active-shadow: 0 4px 16px rgba(212, 175, 55, 0.4);
 
   /* Glass Effect Variables */
   --glass-bg: rgba(255, 255, 255, 0.25);
@@ -31,18 +31,18 @@
 
 .dark {
   /* Dark Theme */
-  --color-bg-primary: #111827;
-  --color-bg-secondary: #1f2937;
+  --color-bg-primary: #0f1419;
+  --color-bg-secondary: #1a2332;
   --color-surface-hover: #374151;
 
-  --color-primary: #3b82f6;
-  --color-primary-hover: #2563eb;
-  --color-accent: #d4af37;
-  --color-accent-hover: #b8860b;
+  --color-primary: #fbbf24;
+  --color-primary-hover: #f59e0b;
+  --color-accent: #34d399;
+  --color-accent-hover: #10b981;
 
   --color-text-primary: #f9fafb;
   --color-text-secondary: #d1d5db;
-  --color-text-invert: #111827;
+  --color-text-invert: #0f1419;
 
   --color-border: #374151;
   --color-border-focus: #fbbf24;
@@ -51,7 +51,7 @@
   --color-success-hover: #10b981;
 
   /* Dark Glass Effect Variables */
-  --glass-bg: rgba(17, 24, 39, 0.3);
+  --glass-bg: rgba(15, 20, 25, 0.3);
   --glass-shadow: rgba(0, 0, 0, 0.5);
   --glass-backdrop-blur: 20px;
 }

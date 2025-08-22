@@ -19,9 +19,6 @@ export default function BurgerMenu() {
         </li>
         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
           <li>
-            <ThemeSwitcher />
-          </li>
-          <li>
             <Button
               style={{ padding: "0.6rem", borderRadius: "10px" }}
               variant="outline"
@@ -34,6 +31,9 @@ export default function BurgerMenu() {
       </ul>
       {isOpen && (
         <ul className="burger-menu">
+          <li>
+            <ThemeSwitcher />
+          </li>
           <li>
             <Link href="/about">About</Link>
           </li>

@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Atkinson', sans-serif;
+  width: fit-content;
 }
 
 .primary {

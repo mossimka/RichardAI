@@ -32,8 +32,8 @@ header {
 }
 
 main {
-  padding-top: 5rem;
   flex: 1;
+  position: relative;
 }
 
 footer {
@@ -54,10 +54,16 @@ a:hover {
 }
 
 section {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: 80vh;
+  }
 }
 
 nav {
@@ -113,6 +119,10 @@ ul {
   border-radius: 1rem;
 }
 
+.animate-spin {
+  animation: spin 0.4s linear infinite;
+}
+
 /* animations */
 
 @keyframes spin {
@@ -122,8 +132,4 @@ ul {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.animate-spin {
-  animation: spin 0.4s linear infinite;
 }

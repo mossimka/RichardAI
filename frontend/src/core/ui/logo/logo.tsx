@@ -15,19 +15,21 @@ export default function Logo() {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return <Loader size={40} />;
-  }
-
   return (
     <Link href="/" className={Styles.logo}>
-      <Image
-        width={40}
-        height={40}
-        src={theme === "dark" ? "/images/logo_dark.webp" : "/images/logo.webp"}
-        alt="Logo"
-      />
-      {/* <h1>Richard AI</h1> */}
+      {mounted ? (
+        <Image
+          width={40}
+          height={40}
+          src={
+            theme === "dark" ? "/images/logo_dark.webp" : "/images/logo.webp"
+          }
+          alt="Logo"
+        />
+      ) : (
+        <Loader size={40} />
+      )}
+      <p className={Styles.logo_text}>Richard AI</p>
     </Link>
   );
 }
