@@ -1,20 +1,13 @@
 .team_title {
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .team_description {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.content {
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 90vw;
 }
 
 .carousel {
@@ -60,7 +53,6 @@
 
 .card img {
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .member_name {
@@ -97,11 +89,18 @@
 @media (max-width: 768px) {
   .slider {
     width: 100vw;
-    height: 50vh;
   }
 
   .card {
     width: 90%;
     padding: 1rem;
+  }
+
+  .member_name {
+    font-size: 1rem;
+  }
+
+  .member_role {
+    font-size: 0.875rem;
   }
 }

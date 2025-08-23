@@ -8,24 +8,44 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "Maxim Sarsekeyev",
+    name: "Maxim Foodsnapovich",
     role: "Co-Founder, Gay",
     image: "/images/team-members/maxim-gay.jpg",
   },
   {
-    name: "Daniyar Munsyzbayev",
+    name: "Daniyar Popoutovich",
     role: "Co-Founder, Gay",
     image: "/images/team-members/daniyar-gay.jpg",
   },
   {
-    name: "Rasul Kerimzhanov",
+    name: "Rasul Battlestackovich",
     role: "Co-founder, Gay",
     image: "/images/team-members/rasul-gay.jpg",
   },
   {
-    name: "Danis Tabachniy",
+    name: "Danis Petlyvovich",
     role: "Co-Founder, Gay",
     image: "/images/team-members/danis-gay.jpg",
+  },
+  {
+    name: "Muslim Filentovich",
+    role: "Co-Founder, Gay",
+    image: "/images/team-members/muslim-gay.png",
+  },
+  {
+    name: "Dauren Internaevich",
+    role: "Co-Founder, Gay",
+    image: "/images/team-members/dauren-gay.jpg",
+  },
+  {
+    name: "Fatikh Repathonovich",
+    role: "Co-Founder, Gay",
+    image: "/images/team-members/fatikh-gay.png",
+  },
+  {
+    name: "Ilya Mementovich",
+    role: "UI-UX Designer, Co-Founder, Gay",
+    image: "/images/team-members/ilya-gay.png",
   },
 ];
 
@@ -82,11 +102,16 @@ const TeamCarousel = () => {
               transition={{ duration: 0.2 }}
               className={styles.card}
             >
-              <div className="img-container">
+              <div
+                className="img-container"
+                style={{ width: "200px", height: "200px" }}
+              >
                 <Image
                   src={team[current].image}
                   alt={`${team[current].name}, ${team[current].role}`}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
                 />
               </div>
               <h1 className={styles.member_name}>{team[current].name}</h1>

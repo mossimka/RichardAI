@@ -29,7 +29,7 @@ export default function Logo() {
       ) : (
         <Loader size={40} />
       )}
-      <p className={Styles.logo_text}>Richard AI</p>
+      <p className={Styles.logo_text}>RichardAI</p>
     </Link>
   );
 }
