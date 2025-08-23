@@ -1,0 +1,107 @@
+.team_title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.team_description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 90vw;
+}
+
+.carousel {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  width: 70vw;
+  height: 60vh;
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--color-bg-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member_name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.member_role {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-text-primary);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dot.active {
+  background: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .card {
+    width: 90%;
+    padding: 1rem;
+  }
+}

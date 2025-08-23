@@ -54,10 +54,12 @@ a:hover {
 }
 
 section {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -92,7 +94,7 @@ ul {
   flex-direction: column;
   gap: 2rem;
   align-items: flex-start;
-  padding: 1rem;
+  padding-block: 1rem;
   border-radius: 1rem;
 }
 
@@ -121,6 +123,19 @@ ul {
 
 .animate-spin {
   animation: spin 0.4s linear infinite;
+}
+
+.img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .img-container {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* animations */

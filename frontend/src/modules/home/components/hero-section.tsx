@@ -11,7 +11,14 @@ const HeroSection = () => {
       <div className={styles.content}>
         <h1 className={styles.hero_title}>increase your</h1>
         <h2 className={styles.hero_subtitle}>testosterone</h2>
-        <div className="" style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className=""
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            margin: "1rem 0",
+          }}
+        >
           <Button variant="secondary" size="lg" className={styles.cta_button}>
             Start now!
           </Button>
