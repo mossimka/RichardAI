@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: inherit;
 }
 
 html {
@@ -17,6 +16,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   color: var(--color-text-primary);
+  font-family: var(--font-main);
+}
+
+button,
+a {
+  font-family: var(--font-main);
 }
 
 header {
@@ -54,7 +59,7 @@ a:hover {
 }
 
 section {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +108,10 @@ ul {
   nav {
     width: 90vw;
   }
+
+  footer a {
+    font-size: 1rem;
+  }
 }
 
 /* utility classes */
@@ -132,7 +141,6 @@ ul {
   z-index: 100;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   max-width: 80vw;
 }
 

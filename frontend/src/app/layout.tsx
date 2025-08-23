@@ -4,11 +4,10 @@ import Header from "@/core/ui/layout/header/header";
 import Footer from "@/core/ui/layout/footer";
 import Providers from "@/core/ui/providers";
 import {
-  Atkinson_Hyperlegible,
-  Archivo,
-  Prompt,
   Unbounded,
-  DM_Sans,
+  Lora,
+  Merriweather,
+  Libre_Baskerville,
 } from "next/font/google";
 
 export const metadata: Metadata = {
@@ -20,17 +19,15 @@ export const metadata: Metadata = {
 };
 
 const unbounded = Unbounded({
-  weight: ["400", "700"],
-  style: ["normal"],
   subsets: ["latin"],
-  display: "swap",
+  variable: "--font-unbounded",
 });
 
-const dm_sans = DM_Sans({
-  weight: ["400", "700"],
-  style: ["normal"],
+const libre_baskerville = Libre_Baskerville({
   subsets: ["latin"],
-  display: "swap",
+  weight: ["400", "700"], // normal + bold
+  style: ["normal", "italic"], // optional
+  variable: "--font-libre-baskerville",
 });
 
 export default function RootLayout({
@@ -40,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${unbounded.className}`}>
+      <body className={`${unbounded.variable} ${libre_baskerville.variable}`}>
         <Providers>
           <Header />
           <main>{children}</main>

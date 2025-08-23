@@ -21,7 +21,7 @@
 }
 
 .description {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 2;
   color: var(--color-text-secondary);
 }
@@ -36,7 +36,6 @@
   .aboutContent {
     flex-direction: column;
     gap: 2rem;
-    max-width: 80vw;
   }
 
   .title {
@@ -50,7 +49,7 @@
   }
 
   .description {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 }

@@ -4,11 +4,11 @@ import { Button } from "@/core/ui/button";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className={styles.hero_section}>
       <video autoPlay loop muted className={styles.video}>
         <source src="/vids/hero-video.mp4" type="video/mp4" />
       </video>
-      <div className={styles.content}>
+      <div className="content">
         <h1 className={styles.hero_title}>increase your</h1>
         <h2 className={styles.hero_subtitle}>testosterone</h2>
         <div

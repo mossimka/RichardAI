@@ -7,13 +7,13 @@ const Footer = () => {
       <nav>
         <ul>
           <li>
-            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy</Link>
           </li>
           <li>
-            <Link href="/terms-of-service">Terms of Service</Link>
+            <Link href="/terms-of-service">Terms</Link>
           </li>
           <li>
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/contact-us">Contact</Link>
           </li>
         </ul>
       </nav>

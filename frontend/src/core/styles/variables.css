@@ -27,6 +27,9 @@
   --glass-bg: rgba(255, 255, 255, 0.25);
   --glass-shadow: rgba(0, 0, 0, 0.25);
   --glass-backdrop-blur: 20px;
+
+  --font-main: "Unbounded", sans-serif;
+  --font-quote: "Libre Baskerville", serif;
 }
 
 .dark {
