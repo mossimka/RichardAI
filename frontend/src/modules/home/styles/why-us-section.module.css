@@ -39,7 +39,7 @@
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 
