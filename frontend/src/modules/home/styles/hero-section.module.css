@@ -33,13 +33,13 @@
   color: var(--color-primary);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .hero_title {
     font-size: 4rem;
   }
 
   .hero_subtitle {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 

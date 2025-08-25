@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ThemeSwitcher from "../../theme-switcher";
 import Logo from "../../logo/logo";
@@ -5,6 +6,7 @@ import Link from "next/link";
 import BurgerMenu from "../../burger-menu/burger-menu";
 import { LogInIcon } from "lucide-react";
 import styles from "./header.module.css";
+import { motion } from "motion/react";
 
 const Header = () => {
   return (

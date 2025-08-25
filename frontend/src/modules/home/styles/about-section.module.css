@@ -5,6 +5,7 @@
 .aboutContent {
   flex-direction: row;
   align-items: center;
+  gap: 20px;
 }
 
 .text {
@@ -51,5 +52,9 @@
   .description {
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  .aboutContent {
+    width: 80vw;
   }
 }

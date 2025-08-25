@@ -46,7 +46,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 a {
@@ -59,7 +59,7 @@ a:hover {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +67,7 @@ section {
 }
 
 nav {
-  width: 75vw;
+  width: 80vw;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
