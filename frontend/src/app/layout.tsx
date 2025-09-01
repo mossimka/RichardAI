@@ -3,12 +3,7 @@ import "../core/styles/globals.css";
 import Header from "@/core/ui/layout/header/header";
 import Footer from "@/core/ui/layout/footer";
 import Providers from "@/core/ui/providers";
-import {
-  Unbounded,
-  Lora,
-  Merriweather,
-  Libre_Baskerville,
-} from "next/font/google";
+import { Unbounded, Libre_Baskerville, Outfit } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Richard AI",
@@ -23,10 +18,17 @@ const unbounded = Unbounded({
   variable: "--font-unbounded",
 });
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  weight: ["400", "700"],
+  style: ["normal"],
+});
+
 const libre_baskerville = Libre_Baskerville({
   subsets: ["latin"],
-  weight: ["400", "700"], // normal + bold
-  style: ["normal", "italic"], // optional
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
   variable: "--font-libre-baskerville",
 });
 
@@ -37,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${unbounded.variable} ${libre_baskerville.variable}`}>
+      <body
+        className={`${unbounded.variable} ${outfit.variable} ${libre_baskerville.variable}`}
+      >
         <Providers>
           <Header />
           <main>{children}</main>

@@ -39,8 +39,8 @@
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .advantage h2 {
@@ -51,6 +51,7 @@
   color: var(--color-text-secondary);
   font-size: 1.2rem;
   line-height: 2;
+  font-family: var(--font-secondary);
 }
 
 .container {
